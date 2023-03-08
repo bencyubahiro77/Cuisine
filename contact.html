@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beno Kitchen</title>
+    <link rel="stylesheet" href="wholepage.css">
+    <script src="function.js"></script>
+</head>
+<body>
+    <header>
+        <div class="homepage__container">
+            
+            <nav>
+                <img src="/pics used/logo croped.png" class="logo">
+                <ul id="sidemenu">
+                 <li><a href="index.html" >HOMEPAGE</a></li>
+                 <li class="dropdown">
+                    <a href="#">PAGES</a>
+                    <div class="dropdown-content">
+                        <a href="about.html">ABOUT</a>
+                        <a href="chefs.html">CHIEFS</a>
+                        <a href="#">EVENTS</a>
+                    </div>
+                 </li>
+                 <li><a href="program.html">PROGRAM</a></li>
+                 <li><a href="gallery.html">GALLERY</a></li>
+                 <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul> 
+                <button class="main__btn" ><a href="contact.html">Contact Us</a></button> 
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+              </nav>
+         </div>
+    </header>
+
+    <div class="contact">
+
+        <div class="row1">
+            <h2>Contact Form</h2>
+            <form>
+              <input type="text" name="name" placeholder="Full Name" id="name" required>
+              <input type="text" name="subject" placeholder="subject" id="subject" required>
+              <input type="email" name="email" placeholder="Email Address" id="email" required>
+              <input type="text" name="phone" placeholder="Phone Number" id="phone" required>
+              <textarea name="message" rows="6" placeholder="Your Message" id="message" required></textarea>
+            </form>
+            <button type="submit" id="submit_button"  class="main__btn">SEND NOW</button>
+            
+        </div>
+
+        <div class="row2">
+            <h2>Contact Info</h2>
+            <h3> KG 245 Gasabo,Rwanda</h3>
+            <h3>+(250) 780000000</h3>
+            <h3> example24@gmail.com</h3>
+            <h3>Weekdays: 9 am - 7 pm</h3>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="address">
+            <p>Our Cooking School features a long and proud history of more than 100 years <br>
+               Founded at the end of the XIXth century.
+            </p>
+            <h3> KG 245 Gasabo,Rwanda</h3>
+            <h3>+(250) 780000000</h3>
+            <h3> example24@gmail.com</h3>
+            <h3>Weekdays: 9 am - 7 pm</h3>
+        </div>
+
+        <div class="subscribe">
+            <h2>Subcribe Now</h2>
+            <p>Enter Email here to be updated. We promise not to send you spam!</p>
+            <form>
+                <input type="email" name="email" placeholder="Enter Your Email Address" id="email" required>
+                <button class="main__btn"><a href="#"></a>SUBSCRIBE</button>
+            </form>
+        </div>
+    </footer>
+    <p class="Website__rights">&#169; BENO 2023 All rights reserved.</p>
+    
+</body>
+</html>

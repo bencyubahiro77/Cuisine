@@ -1,0 +1,538 @@
+body{
+    margin: 0;
+    
+}
+
+header{
+    width: 100%;
+}
+.homepage__container{
+    padding:5px 5%;
+    background-color: rgb(38, 30, 30);
+
+ }
+ nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ .logo{
+    width: 100px;
+ }
+ 
+ nav ul li{ 
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+ }
+ nav ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+ }
+ nav ul li a::after{
+  content:'';
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  transition: 0.5s;
+ }
+ nav ul li a:hover::after{
+    width: 50%;
+ }
+
+ .dropdown {
+   position: relative;
+   z-index: 1;
+
+ }
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 8px 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+ }
+.dropdown-content a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* -----------------------------------------------HOMEPAGE---------------------------------------------- */
+
+.home{
+    text-align: center;
+    height: 90vh;
+    background-image: url(31d5934bd34a60ed9b237076a882604e46dd1db05c7584fe6a092f7d6923242e.jpg); 
+    background-size:cover;
+    background-position: center;
+
+}
+.home h1{
+    color: whitesmoke;
+    font-size: 4em;
+}
+.home h4{
+    padding-top: 15%;
+    margin-top: 0px;
+    color: rgba(238, 96, 13);
+    font-size: 1.5em;
+}
+.main__btn{
+            font-size: 1rem;
+            background-color: green;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 20px;
+            margin-top: pointer;
+            position: relative;
+            transition: all 0.35s;
+            outline: none;
+            color: #f9f9f9;
+            cursor: pointer;
+            
+         }
+         .main__btn a{
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-decoration: none;
+         }
+         .main__btn::after{
+            position:absolute;
+            content:"";
+            top:0;
+            left:0;
+            width:0;
+            height: 100%;
+            background: #4837ff;;
+            transition: all 0.35s;
+            border-radius: 4px;
+         }
+         .main__btn:hover{
+        background-color: rgba(238, 96, 13);;
+         }
+         .main__btn:hover:after {
+            width: 100;
+         }
+
+/* -------------------------------------------cooking classses-------------------------------------------*/
+.cooking_classes{
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ justify-self: center;
+ margin: 0 auto;
+ z-index: 1;
+ max-width: 1200px;
+ text-align: center;
+}
+.cooking_classes h6{
+    color: green;
+    font-size: 1.2em;
+    margin-top: 2%;
+}
+.cooking_classes h1{
+    color: black;
+    font-size: 3em;
+    margin-top: -31px;
+}
+.work-list{
+   display: flex;
+   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+   grid-gap: 40px;
+   margin-top: 50px;
+   margin-left: 0px;
+   margin-bottom: 50px;
+   flex-wrap: wrap;
+}
+.work{
+   position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+    border: 2px solid rgb(61, 58, 58);
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    width: calc(31.33% - 10px); 
+ }
+.work img{
+   height: 35vh;
+   width: 100%;
+   transition: transform 0.5s;
+   }
+   .work:hover img{
+      transform: scale(1.07);
+   }
+ 
+.layer h4{
+    color: whitesmoke;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    background-color: green;
+    margin: 0px;
+ }
+ .layer h2{
+   color: black;
+ }
+ .layer p{
+   color: #6b6363;
+ }
+ .work p{
+   display: block;
+   max-height: 4.5em;
+   overflow: hidden;
+   width: 100%;
+ }
+ .card_footer{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: 2px solid rgb(61, 58, 58);
+    padding-top: 10px;
+    box-sizing: border-box;
+ }
+ /* ---------------------------------------------achievement--------------------------------------- */
+ .achieve{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 70vh;
+  display: flex;
+ }
+ .achieve img{
+ width: 50%;
+ height: 100%;
+ }
+ .myachieve{
+    color: whitesmoke;
+    background-color: rgb(226, 226, 218);
+    height: 100%;
+    padding-left: 20px;
+    padding-bottom: 2px;
+ }
+ .myachieve h6{
+    color: rgba(238, 96, 13);
+    font-size: 1.5em;
+ }
+ .myachieve h1{
+    color: black;
+ }
+.achieve h3{
+    color: black;
+    font-size: 1.6rem;
+}
+.achieve1{
+    padding-left: 20px;
+}
+.achieve1 p{
+    color: #6b6363;
+}
+/* ---------------------------------------timetable schedule----------------------------------------------------- */
+.timetable{
+ margin: 0 auto;
+ max-width: 1200px;
+
+}
+.title{
+    text-align: center;
+}
+.title h6{
+    color: rgba(238, 96, 13);
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+.title h1{
+    font-size: 2.4rem;
+    margin-top: 2px;
+}
+.week{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    border: 2px solid rgb(61, 58, 58);
+    padding-top: 10px;
+    box-sizing: border-box
+}
+.week li a{
+    color:rgba(238, 96, 13);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+ }
+
+ .lessons{
+   padding-top: 2%;
+ }
+
+ .subject{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding-bottom: 30px;
+   border: 2px solid rgb(61, 58, 58);
+   box-sizing: border-box;
+   border-bottom: none;
+    
+ }
+ .subject img{
+width: 20%;
+height: 20vh;
+padding-top: 15px;
+}
+.subject .main__btn{
+   height: 68px;
+}
+.date ul{
+    display: grid; 
+    list-style: none;
+    text-align: center;
+    padding-left: 0px;
+    
+}
+.date ul li{
+    padding-bottom: 10px;
+}
+/* ---------------------------------------MASTER CHEF-------------------------------------- */
+.proffesionals{
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   justify-self: center;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1200px;
+   height: 100%;
+   text-align: center;
+}
+ .chefs{
+   display: flex;
+   flex-wrap: wrap;
+   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+   grid-gap: 40px;
+   margin-top: 50px;
+   margin-left: 0px;
+   margin-bottom: 50px;
+}
+
+.master{
+   position: relative;
+   width: calc(31.33% - 10px); 
+    border-radius: 10px;
+    border: 2px solid rgb(61, 58, 58);
+    box-sizing: border-box; 
+    height: 35vh;
+ }
+.master img{
+   height: 100%;
+   width: 100%;
+   display: block;
+}
+.hide{
+   height: 0;
+   width: 80%;
+   background:linear-gradient(rgba(0,0,0,0.6), #ff004f);
+   border-radius: 10px;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   overflow: hidden;
+   color: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 37px;
+   text-align: center;
+   transition:  height 0.5s;
+}
+.hide h3{
+   font-size: 1.5rem;
+   margin-bottom: 4px;
+}
+.master:hover .hide{
+   height: 100%;
+}
+.social_media{
+  text-align: center;
+} 
+ 
+/* -------------------------------------------------enroll----------------------------------------------------- */
+.register{
+   align-items: center;
+   text-align: center;
+   margin: 0 auto;
+   width: 100%;
+   background-color: #ece8e9f7;
+   margin-bottom: 30px;
+
+}
+.enroll{
+   display: grid;
+   padding-left: 25%;
+   width: 50%;
+}
+.enroll input{
+   height: 5vh;
+   margin-bottom: 10px;
+   border-radius: 10px;
+}
+.csn_class{
+   height: 6vh;
+   margin-bottom: 10px;
+   border-radius: 10px;
+}
+.enroll textarea{
+   height: 15vh;
+   margin-bottom: 10px;
+   border-radius: 10px;
+}
+.register .main__btn{
+   margin-bottom: 20px;
+}
+/* --------------------------------------------------BLOG----------------------------------------------------------- */
+.blogpost{
+   margin: 0 auto;
+   max-width: 1200px;
+   text-align: center;
+  }
+.blogmenu{
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   list-style: none;
+   border: 2px solid rgb(61, 58, 58);
+   padding-top: 10px;
+   box-sizing: border-box;
+   flex-wrap: wrap;
+}
+.blogmenu li a{
+   color:#6b6363;
+   text-decoration: none;
+   font-size: 18px;
+   position: relative; 
+}
+
+/* --------------------------------------------------------FOOTER-------------------------------------------------- */
+footer{
+   align-items: center;
+   justify-self: center;
+   z-index: 1;
+   width: 100%;
+   height: 50vh;
+   display: flex;
+   background-color: #333;
+   color: whitesmoke;
+}
+.address{
+   margin-left: 10%;
+}
+.subscribe{
+   margin-left: 15%;
+}
+.subscribe form{
+   display: grid;
+}
+.subscribe form input{
+   height: 5vh;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   background-color: #a29d9d;
+   width: 60%;
+   color: whitesmoke;
+}
+.subscribe form button{
+   width: 50%;
+}
+.Website__rights{
+   text-align: center;
+   background-color: #171717;
+   color: whitesmoke;
+   height: 4vh;
+   margin: 0 auto;
+   padding: 10px;
+}
+/* ------------------------------------------------contact page---------------------------------------- */
+.contact{
+   display: flex;
+   margin-top: 4%;
+   margin-left: 5%;
+}
+.contact form input{
+   width: calc(45.33% - 20px); 
+   margin-bottom: 10px;
+   height: 5vh;
+   border-radius: 10px;
+}
+.contact form textarea{
+   width: calc(87%);
+   border-radius: 10px;
+   height: 15vh;
+   margin-bottom: 4%;
+}
+.row1 button{
+   margin-bottom: 6%;
+}
+.row1 h2{
+   font-size: 2rem;
+}
+.row2 h3{
+   color: #a29d9d;
+}
+.row2 h2{
+   font-size: 2rem;
+}
+/* -------------------------------------------------gallery------------------------------------------------- */
+.album{
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   justify-self: center;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1200px;
+   height: 100%;
+   text-align: center;
+
+}
+.photo{
+   display: flex;
+   flex-wrap: wrap;
+   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+   grid-gap: 40px;
+   margin-top: 50px;
+   margin-left: 0px;
+   margin-bottom: 50px;
+}
+.gallery{
+   position: relative;
+   width: calc(31.33% - 10px); 
+   padding-bottom: 10px;
+}
+.gallery img{
+   height: 30vh;
+   width: 100%;
+   transition: transform 0.5s;
+   border-radius: 10px;
+}
+.gallery:hover img{
+   transform: scale(1.1);
+}
+
+
